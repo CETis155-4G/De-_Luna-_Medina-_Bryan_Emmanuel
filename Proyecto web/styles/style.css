@@ -1,0 +1,33 @@
+html{
+    background-image: url("./imagenes/nubes.jpg"); /* Imagen de fondo */
+    background-size: 100%; /* tamaño del fondo */
+    background-attachment: fixed; /* propiedad para que el fondo no se mueva */
+
+}
+
+.formulario{
+    text-align: center;
+}
+
+label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+
+
+label {
+    margin: 0.4rem 0;
+}
+
+body {
+    padding: 30px 30px 30px 30px;
+    width: 90%;
+    max-width: 800px;
+    margin-top:    80px;
+    margin-left:   250px;
+    margin-bottom: 10px;
+    margin-right:  10px;
+    box-shadow: 0 0 10 px rgba(red, green, blue, alpha);
+}
+

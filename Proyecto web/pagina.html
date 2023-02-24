@@ -1,0 +1,60 @@
+<html>
+<center>
+<h3><strong>Registro</strong></h3>
+
+<body>
+  <p>Apellido Paterno: <input type="text" name="nombre"/></p>
+  <br>
+  <p>Apellido Materno: <input type="text" name="nombre"/></p>
+  <br>
+  <p>Nombre: <input type="text" name="nombre"/></p>
+  <br>
+  <div class="date">
+      <p></p>Fecha de Nacimiento:  <input type="date"
+      value="dia-mes-año"
+      min="1920-01-01" max="2023-02-22"
+      <br>
+<br>
+<br>
+<body>
+  <label for="email">Correo Electronico:</label>
+
+  <input type="email" id="email" pattern=".+@globex\.com" size="30" required>
+  <br>
+  <form method="POST">
+      <div class="form-row">
+      <div class="col">
+          <br>
+
+  
+  <p>Num. de telefono: <input type="number" name="telefono">
+  </p>
+
+  <form method="POST">
+    <div class="form-row">
+      <div class="col">
+        <p><label>Contraseña: </label><input class="form-control" type="password" name="password"
+            id="password"><button class="btn btn-primary" type="button" onclick="mostrarContrasena()">Mostrar
+            Contraseña</button></p>
+
+
+  </form>
+
+  <script>
+    function mostrarContrasena() {
+      var tipo = document.getElementById("password");
+      if (tipo.type == "password") {
+        tipo.type = "text";
+      } else {
+        tipo.type = "password";
+      }
+    }
+  </script>
+
+<head>
+  <link rel="stylesheet" href="styles/style.css">
+
+</head>
+</center>
+</html>
+
