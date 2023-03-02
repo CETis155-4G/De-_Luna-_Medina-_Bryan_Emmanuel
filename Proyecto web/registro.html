@@ -1,0 +1,74 @@
+<html>
+<center>
+<h3><strong>Registro</strong></h3>
+<body>
+  <!-- Ponemos las etiqueta del apellido p. -->
+  <p>Apellido Paterno: <input type="text" name="nombre"/></p>
+     <!-- Ponemos las etiqueta del apellido m. -->
+  <p>Apellido Materno: <input type="text" name="nombre"/></p>
+  <!-- Ponemos la etiqueta de nombre -->
+  <p>Nombre: <input type="text" name="nombre"/></p>
+  <!--Ponemos la funcion de un tipo calendario
+      para  que asi el usuario pueda proporcionarnos
+      su fecha de nacimiento-->
+  <div class="date">
+      <p></p>Fecha de Nacimiento:  <input type="date"
+      value="dia-mes-año"
+      min="1920-01-01" max="2023-02-22">
+      <br>
+  </body>
+
+  <br>
+    <!-- Ponemos la caja de texto para que el usuario nos ponga su gmail -->
+  <label for="email">Correo Electronico:<input type="email" id="email" pattern=".+@globex\.com" size="30" required></label>
+  <br>
+  <form method="POST">
+      <div class="form-row">
+      <div class="col"></br>
+  <p>Num. de telefono: <input type="number" name="telefono"></p>
+    <!-- aqui esta lo interesante lo que no nos pudimos aprender
+    aqui esta el como mostrar contraseña y ya junta con su cajita -->
+  <form method="POST">
+    <div class="form-row">
+      <div class="col">
+        <p><label>Contrasena: </label><input class="form-control" type="password" name="password"
+            id="password"><button class="btn btn-primary" type="button" onclick="mostrarContrasena()">Mostrar
+            Contrasena</button></p>
+
+
+  </form>
+  <!-- como lo dice el comentario de arriba por la parte de arriba
+  esta nuestro boton de la contraseña aqui ya esta se podria decir que su funcionamiento 
+   -->
+  <script>
+    function mostrarContrasena() {
+      var tipo = document.getElementById("password");
+      if (tipo.type == "password") {
+        tipo.type = "text";
+      } else {
+        tipo.type = "password";
+      }
+    }
+  </script>
+<!-- Esto es bien importante de aprenderlo
+donde tarde una hora intentando que me mande de un lugar a otro
+ya que yo lo tenia como un link pero cada que cambiaba de computadora 
+me aparecia que el archivo se habia borrado o algo asi 
+pero lo que pasaba era que se cambiaba el link y ya-->
+  <button>
+    <li><a href="proyecto.html">Continuar</a></li>
+  </button>
+
+<head>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+</center>
+
+
+
+
+
+
+
+</html>
+
